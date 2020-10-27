@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ventilation-estimator/precache-manifest.b26a73db5096bff69a379991ba9cab7f.js"
+  "/ventilation-estimator/precache-manifest.f70ca2ec9e8414d3a97a85e5a18b8caf.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "ventilation-estimator"});
