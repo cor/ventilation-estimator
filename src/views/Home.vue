@@ -1,18 +1,33 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <h1>Ventilation Rate Estimator</h1>
+    <div>
+      <label for="">CO<sub>2</sub> Outdoors in ppm</label>
+      <input type="number" v-model.number="outdoorsPpm"><span>ppm</span>
+    </div>
+    <div>
+      <label for="">CO<sub>2</sub> Indoors at peak in ppm</label>
+      <input type="text" v-model.number="indoorsPeakPpm"><span>ppm</span>
+    </div>
+    <div>
+      <p>Excess CO<sub>2</sub>: <b>{{excessPpm()}}</b></p>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from "vue-class-component";
-import HelloWorld from "@/components/HelloWorld.vue"; // @ is an alias to /src
+import {Options, Vue} from "vue-class-component";
 
-@Options({
-  components: {
-    HelloWorld
+// @Options({
+//   components: {}
+// })
+
+export default class Home extends Vue {
+  public outdoorsPpm = 0;
+  public indoorsPeakPpm = 0;
+
+  excessPpm(): number {
+    return this.indoorsPeakPpm - this.outdoorsPpm;
   }
-})
-export default class Home extends Vue {}
+}
 </script>
