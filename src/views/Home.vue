@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <h1>Ventilation Rate Estimator</h1>
+    <p>Refer to <a href="https://medium.com/@jjose_19945/how-to-quantify-the-ventilation-rate-of-an-indoor-space-using-a-cheap-co2-monitor-4d8b6d4dab44">this guide</a> when using this tool.</p>
     <div>
       <label for="outdoorsPpm">CO<sub>2</sub> Outdoors = </label>
       <input id="outdoorsPpm" type="number" v-model.number="outdoorsPpm"><span> ppm</span>
