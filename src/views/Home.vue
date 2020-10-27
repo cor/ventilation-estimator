@@ -23,7 +23,20 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
+
+.home {
+  max-width: 500px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
+  background-color: white;
+
+  @media (min-width: 500px) {
+    margin: 32px auto;
+  }
+}
 
 input {
   width: 80px;
@@ -33,7 +46,7 @@ input {
 
 
 <script lang="ts">
-import {Options, Vue} from "vue-class-component";
+import { Vue } from "vue-class-component";
 
 export default class Home extends Vue {
   public outdoorsPpm = 0;
