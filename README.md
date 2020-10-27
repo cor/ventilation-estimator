@@ -1,4 +1,5 @@
 # ventilation-estimator
+Estimates the ventilation rate of an indoor space. Estimation is based on the method described in [Jose-Luis Jimenez' article](https://medium.com/@jjose_19945/how-to-quantify-the-ventilation-rate-of-an-indoor-space-using-a-cheap-co2-monitor-4d8b6d4dab44).
 
 ## Project setup
 ```
