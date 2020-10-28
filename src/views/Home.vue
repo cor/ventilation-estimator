@@ -11,8 +11,8 @@
       <input id="indoorsPeakPpm" type="number" v-model.number="indoorsPeakPpm"><span> ppm</span>
     </div>
     <div>
-      <p>Excess CO<sub>2</sub>: <b>{{excessPpm()}}</b><span> ppm</span></p>
-      <p>Indoors CO<sub>2</sub> at 63% decline: <b>{{Math.floor(declined63Ppm())}}</b> ppm</p>
+      <p>Excess CO<sub>2</sub> = <b>{{excessPpm()}}</b><span> ppm</span></p>
+      <p>Indoors CO<sub>2</sub> at 63% decline = <b>{{Math.floor(declined63Ppm())}}</b> ppm</p>
     </div>
     <div>
       <label for="declined63Time">Time between start and declined to <b>{{Math.floor(declined63Ppm())}}</b> ppm = </label>
